@@ -1,6 +1,5 @@
 # 💖 Pink Smile
 
-![Banner del proyecto](assets/img/ImgPinkSmile/logos/banner-pinksmile.png)
 
 > 🌸 **Pink Smile** es un emprendimiento de regalos y detalles diseñado para llenar de alegría los momentos más especiales.  
 > Cada uno de nuestros productos está hecho con amor, buscando reflejar la esencia de regalar sonrisas y momentos inolvidables.  
