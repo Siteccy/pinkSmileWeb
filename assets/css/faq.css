@@ -1,0 +1,124 @@
+/* =============================
+   HERO
+============================= */
+.faq-hero {
+  background: linear-gradient(135deg, #ffd6e8, #fff0f7);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.faq-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.faq-hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+/* =============================
+   FAQ SECTION
+============================= */
+.faq-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* ITEM */
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* QUESTION BUTTON */
+.faq-question {
+  width: 100%;
+  background: #ff4f9c;
+  color: #fff;
+  border: none;
+  padding: 18px 22px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/* ICON */
+.faq-question i {
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon when active */
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+/* ANSWER */
+.faq-answer {
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 22px;
+  color: #555;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 18px 22px;
+}
+
+/* =============================
+   CTA SECTION
+============================= */
+.faq-cta {
+  background: #fff0f7;
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cta-text h2 {
+  margin-bottom: 8px;
+}
+
+.btn-cta {
+  background: #ff4f9c;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-cta:hover {
+  background: #e63b86;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
