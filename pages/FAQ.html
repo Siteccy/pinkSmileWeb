@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>❓ Preguntas Frecuentes | Pink Smile</title>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- FUENTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="/assets/css/estilos.css" />
+  <link rel="stylesheet" href="/assets/css/faq.css" />
+
+  <link rel="icon" type="image/png" href="/assets/img/ImgPinkSmile/logos/LogoRosado.jpg" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="container">
+      <a href="/index.html" class="logo">
+        <img src="/assets/img/ImgPinkSmile/logos/LogoOriginal.jpg" alt="Pink Smile">
+      </a>
+        <nav class="nav-links">
+        <a href="/index.html" class="home-icon" title="Inicio">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="faq-hero">
+    <h1>❓ Preguntas Frecuentes</h1>
+    <p>
+      Queremos que tu experiencia con <b>Pink Smile</b> sea clara, fácil y encantadora 💖  
+      Aquí resolvemos las dudas más comunes.
+    </p>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        ¿Cómo puedo hacer un pedido?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Puedes hacer tu pedido directamente por nuestro WhatsApp 📲.  
+          Allí te asesoramos, enviamos opciones disponibles y coordinamos detalles de pago y entrega.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        ¿Personalizan los regalos?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          ¡Claro que sí! 💝 Personalizamos detalles según la ocasión, presupuesto y estilo.  
+          También puedes personalizar pijamas, kits y algunos productos de Sweet Pink.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        ¿Hacen envíos fuera de Bogotá?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Sí. Realizamos envíos dentro de Bogotá y a nivel nacional.  
+          El costo depende de la ciudad y el tipo de producto.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        ¿Cuánto tiempo tarda la entrega?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          El tiempo puede variar según la personalización.  
+          Generalmente los pedidos se entregan entre 2 y 4 días hábiles en Bogotá y de 4 a 8 días hábiles a nivel nacional.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        ¿Qué métodos de pago aceptan?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Aceptamos transferencias bancarias y pagos digitales.  
+          Te compartimos la información al momento de confirmar tu pedido.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        ¿Puedo armar mi propio kit?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          ¡Sí! 🎁 Puedes elegir los productos y nosotros armamos el kit ideal para ti.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA MEJORADO -->
+  <section class="faq-cta">
+    <div class="cta-container">
+      
+      <div class="cta-text">
+        <h2>¿Tienes otra duda?</h2>
+        <p>Estamos felices de ayudarte 💗</p>
+      </div>
+
+      <a href="https://wa.me/573114548921" class="btn-cta">
+        Escríbenos por WhatsApp
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="copy">© 2026 Pink Smile 💗 Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT ACORDEÓN -->
+<script>
+  const items = document.querySelectorAll(".faq-item");
+
+  items.forEach(item => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+</script>
+
+
+</body>
+</html>
