@@ -1,265 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>💼 Portafolio Pink Smile</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛍 Portafolio | Pink Smile</title>
 
-    <!-- ICONOS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="/assets/css/estilos.css">
+<link rel="stylesheet" href="/assets/css/portafolio.css">
+<link rel="icon" type="image/png" href="/assets/img/ImgPinkSmile/logos/LogoRosado.jpg" />
 
-    <!-- TIPOGRAFÍA -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="/assets/img/ImgPinkSmile/logos/LogoRosado.jpg" />
+<body>
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="/assets/css/estilos.css" />
-    <link rel="stylesheet" href="/assets/css/portafolio.css" />
+<header class="navbar">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/img/ImgPinkSmile/logos/LogoOriginal.jpg" alt="Pink Smile">
+    </a>
 
-    <!-- ESTILOS NUEVOS PARA EL NUEVO DISEÑO -->
-    <style>
-      .portafolio-hero {
-        padding: 80px 20px;
-        background: linear-gradient(135deg, #ffb6d9, #ffd6e8);
-        text-align: center;
-        border-radius: 0 0 30px 30px;
-      }
+    <a href="/index.html" class="home-icon-mobile">
+      <i class="fa-solid fa-house"></i>
+    </a>
+  </div>
+</header>
 
-      .portafolio-hero h1 {
-        font-size: 2.6rem;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .portafolio-hero p {
-        font-size: 1.1rem;
-        max-width: 700px;
-        margin: 0 auto;
-      }
-
-      .seccion {
-        padding: 60px 20px;
-      }
-
-      .seccion h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 2rem;
-        color: #ff4f9c;
-      }
-
-      .seccion .sub {
-        text-align: center;
-        color: #555;
-        max-width: 700px;
-        margin: 0 auto 40px;
-      }
-
-      .grid-portafolio {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-        padding: 10px;
-      }
-
-      .card-p {
-        background: #fff;
-        border-radius: 16px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        overflow: hidden;
-        transition: .3s;
-      }
-
-      .card-p:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-      }
-
-      .card-p img {
-        width: 100%;
-        height: 240px;
-        object-fit: cover;
-      }
-
-      .card-p h3 {
-        padding: 16px 20px 5px;
-        font-size: 1.3rem;
-      }
-
-      .card-p p {
-        padding: 0 20px 20px;
-        color: #666;
-      }
-
-      .btn-p {
-        display: inline-block;
-        margin: 0 20px 20px;
-        background: #ff4f9c;
-        color: #fff;
-        padding: 10px 18px;
-        border-radius: 8px;
-        transition: .3s;
-        text-decoration: none;
-      }
-
-      .btn-p:hover {
-        background: #e43585;
-      }
-    </style>
-  </head>
-
-  <body>
-
-    <!-- HEADER ORIGINAL -->
-    <header class="navbar">
-      <div class="container">
-        <a href="/index.html" class="logo">
-          <img src="/assets/img/ImgPinkSmile/logos/LogoOriginal.jpg" alt="Pink Smile" />
-        </a>
-
-        <a href="/index.html" class="btn-home-mobile"><i class="fa-solid fa-house"></i></a>
-
-        <nav class="nav-links">
-          <a href="/index.html">Inicio</a>
-          <a href="quienes-somos.html">¿Quiénes Somos?</a>
-
-          <!-- MENÚ PORTAFOLIO (dropdown recomendado futuro) -->
-          <!-- <a href="/portafolio.html" class="activo">Portafolio</a>
-
-          <a href="/pinkSecret/index.html">Sweet Pink</a> -->
-        </nav>
-
-        <div class="nav-social">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-      </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="portafolio-hero">
-      <h1>🎁 Nuestro Portafolio</h1>
-      <p>
-        Todo lo que necesitas para sorprender, enamorar y crear momentos inolvidables.
-        Explora nuestras líneas de detalles, lencería, pijamas y regalos especiales.
-      </p>
-    </section>
-
-    <!-- SECCION 1: NUEVAS LÍNEAS -->
-    <section class="seccion">
-      <h2>Nuestras Líneas Principales</h2>
-      <p class="sub">Descubre lo nuevo en Pink Smile ✨</p>
-
-      <div class="grid-portafolio">
-        <div class="card-p">
-          <img src="/assets/img/SweetPink/Logo201125.png" alt="">
-          <h3>Sweet Pink</h3>
-          <p>Lencería, ropa interior y outfits íntimos llenos de estilo y sensualidad.</p>
-          <a class="btn-p" href="/pinkSecret/index.html">Explorar</a>
-        </div>
-
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/pag/Index/pijamas.jpeg" alt="">
-          <h3>Pijamas</h3>
-          <p>Pijamas suaves, cómodas y hermosas para noches únicas.</p>
-          <a class="btn-p" href="/pages/subpages/pajamas.html">Ver pijamas</a>
-        </div>
-
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/pag/Index/Combo1 man.jpeg" alt="">
-          <h3>Kits-Combos</h3>
-          <p>Sets completos listos para enamorar y sorprender en cualquier ocasión.</p>
-          <a class="btn-p" href="/pages/subpages/kits.html">Ver anchetas</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCION 2: CATEGORÍAS ORIGINALES -->
-    <section class="seccion">
-      <h2>Regalos para toda ocasión</h2>
-      <p class="sub">Elige el estilo de regalo que buscas 💖</p>
-
-      <div class="grid-portafolio">
-
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/Collages/FelizAniversario.jpg" alt="">
-          <h3>Amor & Parejas</h3>
-          <p>Detalles románticos llenos de magia y emoción.</p>
-          <a class="btn-p" href="subpages/love.html">Ver más</a>
-        </div>
-
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/Collages/Felizcumple.jpg" alt="">
-          <h3>Cumpleaños</h3>
-          <p>Celebraciones únicas llenas de color y felicidad.</p>
-          <a class="btn-p" href="#">Ver más</a>
-        </div>
-
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/Collages/Exitos.jpg" alt="">
-          <h3>Empresariales</h3>
-          <p>Regalos premium para colaboradores y clientes.</p>
-          <a class="btn-p" href="#">Ver más</a>
-        </div>
-
-        <!-- <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/Collages/Cojines.jpg" alt="">
-          <h3>Infantiles</h3>
-          <p>Detalles tiernos para los más pequeños.</p>
-          <a class="btn-p" href="#">Ver más</a>
-        </div> -->
-
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/Collages/FelizDiaDel Padre.jpg" alt="">
-          <h3>Familia</h3>
-          <p>Celebraciones que unen corazones.</p>
-          <a class="btn-p" href="#">Ver más</a>
-        </div>
-<!-- 
-        <div class="card-p">
-          <img src="/assets/img/ImgPinkSmile/Originales/Raton.jpg" alt="">
-          <h3>Afiches & Posters</h3>
-          <p>Decoración con estilo y personalidad.</p>
-          <a class="btn-p" href="#">Ver más</a>
-        </div> -->
-
-      </div>
-    </section>
-
-  <section class="portafolio-hero">
-  <h1>🎁 ¡Creamos el regalo perfecto para ti!</h1>
-  <p>
-    ¿No encontraste exactamente lo que buscas?  
-    ¡No te preocupes! En <b>Pink Smile</b> personalizamos cada detalle para que tu regalo sea único,
-    especial y hecho a tu medida. 💖
-  </p>
+<!-- HERO -->
+<section class="shop-hero">
+  <h1>Nuestro Portafolio</h1>
+  <p>Descubre detalles únicos diseñados para cada momento especial 💕</p>
 </section>
-    <!-- FOOTER ORIGINAL -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div>
-          <h4>Contáctanos</h4>
-          <p>📞 311 454 89 21</p>
-          <p>📍 Calle 80 N° 102 - 64</p>
-          <p>Bogotá D.C.</p>
-          <p>📧 comercialsmilepink@gmail.com</p>
-        </div>
-        <div>
-          <h4>Atención al Cliente</h4>
-          <p>Buzón de Sugerencias</p>
-          <p>Preguntas Frecuentes</p>
-          <p>Cliente Frecuente</p>
-        </div>
-        <div>
-          <h4>Legal</h4>
-          <p>Política de Privacidad</p>
-          <p>Aviso de Privacidad</p>
-          <p>Términos y Condiciones</p>
-        </div>
-      </div>
-      <p class="copy">© 2026 Siteccy 💗 Todos los derechos reservados.</p>
-    </footer>
 
-  </body>
+<!-- FILTROS -->
+<section class="shop-filters">
+  <a href="/pages/portafolio.html" class="filter-btn active">Todos</a>
+  <a href="/pages/subpages/parejas.html" class="filter-btn">Parejas</a>
+  <a href="/pages/cumpleanos.html" class="filter-btn">Cumpleaños</a>
+  <a href="/pages/empresariales.html" class="filter-btn">Empresariales</a>
+  <a href="/pages/infantiles.html" class="filter-btn">Infantiles</a>
+  <a href="/pinkSecret/index.html" class="filter-btn">Sweet Pink</a>
+</section>
+
+
+<!-- PRODUCTOS -->
+<section class="shop-grid">
+
+  <!-- PRODUCTO -->
+  <div class="product-card">
+    <span class="badge">🔥 Bestseller</span>
+    <img src="/assets/img/ImgPinkSmile/Collages/FelizAniversario.jpg" alt="">
+    <div class="product-info">
+      <h3>Box Amor Eterno</h3>
+      <p>Detalle romántico personalizado.</p>
+      <div class="product-footer">
+        <span class="price">Desde $89.900</span>
+        <a href="https://wa.me/573114548921" class="btn-buy">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge new">✨ Nuevo</span>
+    <img src="/assets/img/ImgPinkSmile/Collages/Felizcumple.jpg" alt="">
+    <div class="product-info">
+      <h3>Kit Cumpleaños Deluxe</h3>
+      <p>Personalizado con nombre y mensaje.</p>
+      <div class="product-footer">
+        <span class="price">Desde $75.000</span>
+        <a href="https://wa.me/573114548921" class="btn-buy">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="/assets/img/ImgPinkSmile/Collages/Exitos.jpg" alt="">
+    <div class="product-info">
+      <h3>Kit Empresarial Premium</h3>
+      <p>Ideal para colaboradores.</p>
+      <div class="product-footer">
+        <span class="price">Cotizar</span>
+        <a href="https://wa.me/573114548921" class="btn-buy">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CTA FINAL -->
+<section class="shop-cta">
+  <h2>¿Quieres algo totalmente personalizado?</h2>
+  <a href="https://wa.me/573114548921" class="btn-main">
+    Personalizar mi detalle 💗
+  </a>
+</section>
+
+<footer class="footer">
+  <p class="copy">© 2026 Pink Smile 💗 Todos los derechos reservados.</p>
+</footer>
+
+</body>
 </html>
